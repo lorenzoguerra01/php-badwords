@@ -36,7 +36,7 @@
 
 <body>
     <div id="app" class="ms_screen text-center">
-        <h1>PHP Saluta</h1>
+        <h1>PHP Bad Word</h1>
         <div class="card ms_card">
             <h2>Paragraph</h2>
             <?php echo "<p>$paragraph </p> Lenght: " . strlen($paragraph) . " characters"; ?>
