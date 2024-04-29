@@ -1,6 +1,3 @@
-<?php
-    $name = "Lorenzo";
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +5,7 @@
     <meta charset="UTF-8">
     <!-- emta per media query  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PHP Badwords</title>
     <!-- collegamento font awsome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -34,15 +31,15 @@
 
 <body>
     <div id="app" class="ms_screen text-center">
-        <h1>PHP</h1>
+        <h1>PHP Bad Word</h1>
         <div class="card ms_card">
-            <h2>{{message}}</h2>
-            <?php
-            echo "<h2>Hello $name</h2>";
-            ?>
-            <form action="saluta.php" method="get">
-                <input type="text" name="name">
-                <button type="submit">Submit</button>
+            <form action="badword.php" method="POST">
+                <h2 class=" p-3 " >Paragraph</h2>
+                <input type="textarea" name="paragraph">
+                <h2 class=" p-3 ">Badword</h2>
+                <input type="text" name="badWord">
+                <br>
+                <button type="submit" class=" m-3 ">Submit</button>
             </form>
         </div>
     </div>

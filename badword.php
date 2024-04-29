@@ -1,5 +1,7 @@
 <?php
-    $name = "Lorenzo";
+    $paragraph = $_POST['paragraph'];
+    $badWord = $_POST['badWord'];
+    $censoredParagraph = str_replace($badWord, '***', $paragraph);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,12 +36,13 @@
 
 <body>
     <div id="app" class="ms_screen text-center">
-        <h1>PHP</h1>
+        <h1>PHP Saluta</h1>
         <div class="card ms_card">
-            <h2>{{message}}</h2>
-            <?php
-            echo "<h2>Hello $name</h2>";
-            ?>
+            <h2>Paragraph</h2>
+            <?php echo "<p>$paragraph</p>"; ?>
+            <h2>Censored Paragraph</h2>
+            <?php echo "<p>$censoredParagraph</p>"; ?>
+            <a href="index.php">Back</a>
         </div>
     </div>
 </body>
