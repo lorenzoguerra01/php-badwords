@@ -39,10 +39,10 @@
         <h1>PHP Saluta</h1>
         <div class="card ms_card">
             <h2>Paragraph</h2>
-            <?php echo "<p>$paragraph</p>"; ?>
+            <?php echo "<p>$paragraph </p> Lenght: " . strlen($paragraph) . " characters"; ?>
             <h2>Censored Paragraph</h2>
-            <?php echo "<p>$censoredParagraph</p>"; ?>
-            <a href="index.php">Back</a>
+            <?php echo "<p>$censoredParagraph</p> Lenght: " . strlen($censoredParagraph) . " characters"; ?>
+            <a href="index.php" class="p-3">Back</a>
         </div>
     </div>
 </body>
